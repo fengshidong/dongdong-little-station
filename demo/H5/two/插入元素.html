@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="JS/jQuery.mini.js"></script>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      border: 2px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    hello
+    <p>123123123</p>
+    world
+  </div>
+  <script>
+    let p = $("<p>我是新来的</p>")
+    // 在元素后面
+    // $("div").append(p)
+    // p.appendTo($('div'))
+    // 在元素前面
+    // $('div').prepend(p)
+    // p.prependTo($('div'))
+    // 当有多条指令，显示最后一条，p是一个复杂数据类型
+    // $('div').append(p)
+    // $('div').prepend(p)
+    // 元素外面后面
+    // $('div').after(p)
+    // p.insertAfter($('div'))
+    // 元素外面前面
+    // $('div').before(p)
+    // p.insertBefore($('div'))
+  </script>
+  
+</body>
+</html>

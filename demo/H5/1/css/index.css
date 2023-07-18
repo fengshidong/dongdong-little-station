@@ -1,0 +1,91 @@
+* {
+margin: 0;
+padding: 0;
+}
+ul,
+ol,
+li {
+list-style: none;
+}
+a {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+input,
+select,
+textarea {
+outline: none;
+}
+img {
+border: none;
+overflow: hidden;
+}
+body {
+font-size: 16px;
+font-family: '宋体';
+}
+.center{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header{
+  width: 100%;
+  height: 99px;
+  border-bottom: 1px solid #a3a097;
+  background-color: rgba(255, 255, 255, .6);
+}
+.header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header li{
+  width: 150px;
+  height: 99px;
+  margin-left: 10px;
+}
+.header li:first-child{
+  margin-left: 18px;
+}
+.header li:nth-child(4){
+  width: 195px;
+}
+.header a{
+  display: block;
+  width: 100%;
+  height: 95px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header a:hover{
+  color: #b6281b;
+  border-bottom: 5px solid #b6281b;
+}
+.header p{
+  font-size: 16px;
+  line-height: 1;
+}
+.header span{
+  display: block;
+  font-size: 9px;
+  line-height: 1;
+}
+
+.banner{
+  width: 100%;
+  height: 700px;
+  background-color: #e8dfd7;
+}
+.banner_pic{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../image/index/banner.png) no-repeat center center /100% 100%; 
+}

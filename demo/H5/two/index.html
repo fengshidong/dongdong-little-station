@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="JS/jQuery.mini.js"></script>
+</head>
+
+<body>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
+  <ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ol>
+  <script>
+    $(function () {
+      $("*").css("margin", 0, "padding", 0)
+      $("div").css("background", "pink")
+      $("div").css("marginTop", "10px")
+      // $("ul li")[0].style.color = "red"
+      // $("ul li")[1].style.color = "blue"
+      // $("ul li")[2].style.color = "pink"
+      // $("ul li")[3].style.color = "black"
+      $('ul li').css("color", "red")
+      $('ol li:eq(0)').css("color", "red")
+      $('ol li:eq(1)').css("color", "blue")
+      $('ol li:eq(2)').css("color", "pink")
+      $('ol li:eq(3)').css("color", "black")
+    })
+  </script>
+
+</body>
+
+</html>

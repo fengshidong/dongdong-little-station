@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clock Rotation Example</title>
+    <style>
+      /* 将时钟转动到水平方向 */
+      #clock {
+        transform: rotate(90deg);
+      }
+
+      /* 时钟样式 */
+      #clock {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 10px solid black;
+        position: relative;
+      }
+
+      /* 秒针样式 */
+      #second-hand {
+        width: 1px;
+        height: 80px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: bottom;
+        transform: translate(-50%, -100%) rotate(0deg);
+        animation: rotate-sec 60s linear infinite;
+      }
+
+      /* 分针样式 */
+      #minute-hand {
+        width: 3px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: bottom;
+        transform: translate(-50%, -100%) rotate(0deg);
+        animation: rotate-min 3600s linear infinite;
+      }
+
+      /* 时针样式 */
+      #hour-hand {
+        width: 5px;
+        height: 50px;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: bottom;
+        transform: translate(-50%, -100%) rotate(0deg);
+        animation: rotate-hour 43200s linear infinite;
+      }
+
+      /* 秒针旋转动画 */
+      @keyframes rotate-sec {
+        0% {
+          transform: translate(-50%, -100%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -100%) rotate(360deg);
+        }
+      }
+
+      /* 分针旋转动画 */
+      @keyframes rotate-min {
+        0% {
+          transform: translate(-50%, -100%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -100%) rotate(360deg);
+        }
+      }
+
+      /* 时针旋转动画 */
+      @keyframes rotate-hour {
+        0% {
+          transform: translate(-50%, -100%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -100%) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="clock">
+      <div id="hour-hand"></div>
+      <div id="minute-hand"></div>
+      <div id="second-hand"></div>
+    </div>
+  </body>
+</html>

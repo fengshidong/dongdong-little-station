@@ -5,12 +5,8 @@
     </el-select> -->
   </div>
 </template>
-
 <script setup>
 const allmusic = defineProps(['allmusic'])
 console.log(allmusic);
-
-
 </script>
-
 <style lang="scss" scoped></style>
